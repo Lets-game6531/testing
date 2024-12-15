@@ -1,19 +1,19 @@
-/* Apply the background image */
+/* Global styles */
 body {
-    background-image: url('IMG_1427.jpeg'); /* Replace with your image URL */
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-image: url('your-image.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 100%;
 }
 
 /* Content styling */
 .content {
     padding: 50px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
     border-radius: 10px;
     max-width: 600px;
     margin: 100px auto;
@@ -29,9 +29,9 @@ p {
     color: #666;
 }
 
-/* Fallback for mobile devices */
-@media screen and (max-width: 768px) {
+/* For desktop (background fixed) */
+@media screen and (min-width: 769px) {
     body {
-        background-attachment: scroll; /* Ensures background scrolls with the content on small screens */
+        background-attachment: fixed; /* Fixed background for desktop */
     }
 }
