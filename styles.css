@@ -1,0 +1,37 @@
+/* Apply the background image */
+body {
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Content styling */
+.content {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Fallback for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Ensures background scrolls with the content on small screens */
+    }
+}
